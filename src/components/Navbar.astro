@@ -1,79 +1,81 @@
-<nav class="bg-white no-underline">
-  <div class="max-w-screen-xl mx-auto px-2">
-    <div class="flex justify-between">
-      <div class="flex space-x-4">
-        <!-- logo -->
-        <div class="">
-          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img
-              src="kizuna_logo.svg"
-              class="h-20 sm:object-center"
-              alt="kizuna catering logo"
-            />
-          </a>
+<div class="bg-white no-underline">
+  <nav >
+    <div class="max-w-screen-xl mx-auto">
+      <div class="flex justify-between">
+        <div class="flex space-x-2">
+          <!-- logo -->
+          <div class="">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img
+                src="kizuna_logo.svg"
+                class="h-20 ml-5 lg:ml-0 sm:object-center"
+                alt="kizuna catering logo"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
+            >Home</a
+          >
+          <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
+            >Services</a
+          >
+          <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
+            >Menu</a
+          >
+          <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
+            >Contact</a
+          >
+        </div>
+        <!-- mobile button -->
+        <div class="md:hidden md:max-h-0 flex items-center">
+          <button class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 mr-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="hidden md:flex items-center space-x-1">
-        <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
-          >Home</a
-        >
-        <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
-          >Services</a
-        >
-        <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
-          >Menu</a
-        >
-        <a href="/" class="py-2 px-3 text-xl hover:text-[#FF5F15] text-black"
-          >Contact</a
-        >
-      </div>
-      <!-- mobile button -->
-      <div class="md:hidden flex items-center">
-        <button menu-btn>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-10"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-            ></path>
-          </svg>
-        </button>
-      </div>
     </div>
-  </div>
-  <div class="mobile-menu hidden">
-    <a
-      href="/"
-      class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
-      >Home</a
-    >
-    <a
-      href="/"
-      class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
-      >Services</a
-    >
-    <a
-      href="/"
-      class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
-      >Menu</a
-    >
-    <a
-      href="/"
-      class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
-      >Contact</a
-    >
-  </div>
-</nav>
+    <div class="mobile-menu hidden ">
+      <a
+        href="/"
+        class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
+        >Home</a
+      >
+      <a
+        href="/"
+        class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
+        >Services</a
+      >
+      <a
+        href="/"
+        class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
+        >Menu</a
+      >
+      <a
+        href="/"
+        class="block py-2 px-4 text-xl text-center hover:text-[#ffffff] hover:bg-[#FF5F15] text-black"
+        >Contact</a
+      >
+    </div>
+  </nav>
+</div>
 
 <script>
-  const btn = document.querySelector("[menu-btn]");
+  const btn = document.querySelector(".menu-btn");
   const menu = document.querySelector(".mobile-menu");
 
   btn.addEventListener("click", () => {
