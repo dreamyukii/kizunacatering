@@ -1,3 +1,7 @@
+---
+import { Image } from 'astro:assets';
+import foodImage from '../../public/food_catering.svg';
+---
 <div class="min-h-[40vh] bg-gradient-to-r from-[#ff6700] via-[#ffa86e] to-[#fff4de] ">
   <div
   class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0  lg:grid-cols-12"
@@ -17,7 +21,7 @@
     >
   </div>
   <div class="lg:col-span-5 mt-10">
-    <img src="food_catering.svg" alt="" />
+    <Image src={foodImage} alt="" />
   </div>
 </div>
 </div>
