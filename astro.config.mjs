@@ -8,7 +8,8 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.kizunacatering.my.id/',
-  integrations: [mdx(), 
+  integrations: [
+    mdx(), 
 		sitemap(),
 		partytown({
 			config: {
