@@ -2,28 +2,21 @@
 import { Image } from 'astro:assets';
 import foodImage from '../../public/food_catering.svg';
 ---
-<div class="min-h-[40vh] bg-gradient-to-r from-[#ff6700] via-[#ffa86e] to-[#fff4de] ">
-  <div
-  class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0  lg:grid-cols-12"
->
-  <div class="lg:col-span-5 mt-10">
-    <h1 class="max-w-10xl mt-4 mb-4 text-5xl font-extrabold ">
-      The Perfect Choice for Your Events
-    </h1>
-    <p class="max-w-2xl text-xl mb-5">
-      We are commited to providing good service and ensuring your
-      satisfication
-    </p>
-    <button
-      type="button"
-      class="outline-8 text-[#FF6700] hover:text-[#000000] hover:outline-[#000000] bg-white font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2"
-      >Learn More</button
-    >
-  </div>
-  <div class="lg:col-span-5 mt-10">
-    <Image src={foodImage} alt="" />
-  </div>
-</div>
-</div>
-
-
+ <div class="h-[90vh] lg:h-[50vh] bg-gradient-to-r from-[#ff6700] via-[#ffa86e] to-[#fff4de]">
+    <div class="max-w-[85rem] h-[40vh] mx-auto px-4 sm:px-6 lg:px-8 ">
+      <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+          <div>
+            <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">The Perfect Choice for Your Events</h1>
+            <p class="mt-3 text-lg text-gray-800">We are commited to providing good service and ensuring your satisfication</p>
+            <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+              <a class="py-3 px-4 inline-flex justify-center items-center text-[#FF6700] hover:text-[#000000] hover:outline-[#000000] bg-white gap-x-2 text-sm font-semibold rounded-full border" href="/">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="relative ms-4">
+              <Image src={foodImage} class="mt-5 w-full rounded-md"  alt="Image Description"/>
+          </div>
+        </div>
+      </div>
+ </div>

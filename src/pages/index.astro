@@ -1,10 +1,10 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import Heroes from "../components/Heroes.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 import Plan from "../components/Plan.astro";
 import Services from "../components/Services.astro";
+import Heroes from "../components/Heroes.astro";
 ---
 
 <!doctype html>
@@ -12,24 +12,29 @@ import Services from "../components/Services.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="kizuna_logo.svg">
+    <link rel="icon" type="image/x-icon" href="kizuna_logo.svg" />
     <title>Kizuna Catering</title>
   </head>
-  <body >
-    <Navbar/>
-    <Heroes/>
-    <Services/>
-    <Plan/>
-    <Contact/>
-    <Footer/>
+  <body>
+    <Navbar />
+    <Heroes />
+    <Services />
+    <Plan />
+    <Contact />
+    <Footer />
   </body>
 </html>
 <!-- Google tag (gtag.js) -->
-<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-G4M69RF8S0"></script>
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-G4M69RF8S0"></script>
 <script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-G4M69RF8S0');
+  gtag("config", "G-G4M69RF8S0");
 </script>
